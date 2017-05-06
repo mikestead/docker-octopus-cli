@@ -5,7 +5,7 @@ MAINTAINER Mike Stead
 ENV OCTO_TOOLS_VERSION 4.15.1
 
 RUN apt-get update && \
-    apt-get install -y wget libunwind8 libicu55 && \
+    apt-get install -y wget libunwind8 libicu55 libcurl4-openssl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     cd /opt && \
